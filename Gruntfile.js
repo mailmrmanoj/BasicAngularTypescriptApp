@@ -17,11 +17,7 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 files: [
-                    {expand: true, src: ['framework/**/*.html'], dest: '../reactore-frontend-frameworks-distribution'},
-                    {expand: true, src: ['framework/reactore.js'], dest: '../reactore-frontend-frameworks-distribution'},
-                    {expand: true, src: ['framework/reactore.d.ts'], dest: '../reactore-frontend-frameworks-distribution'},
-                    {expand: true, src: ['types/**/*'], dest: '../reactore-frontend-frameworks-distribution'},
-                    {expand: true, src: ['bower.json'], dest: '../reactore-frontend-frameworks-distribution'}
+            
                  ]
             }
         },
