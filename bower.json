@@ -21,13 +21,9 @@
     "Admin <mailmrmanoj@gmail.com>"
   ],
   "ignore": [
-    "common-api/**/*",
-    "common-ui/**/*",
-    "project/**/*",
     ".bowerrc",
     ".gitignore",
     "bower.json",
-    "build.sbt",
     "Gruntfile.js",
     "karma.conf.js",
     "package.json"
