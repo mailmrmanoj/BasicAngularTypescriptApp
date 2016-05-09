@@ -2,14 +2,10 @@
 **/target/
 **/*.iml
 **/*.tmp.txt
-classes/
 /log
 .tscache/
 node_modules/
 bower_components/
 
-  
-!common-ui/test/commonSpec.js
- 
 **/obj
 **/bin
