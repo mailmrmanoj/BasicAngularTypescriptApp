@@ -5,36 +5,16 @@
     // }
      export class Router implements AngularAttack.IRouter {
         initialize($stateProvider, $urlRouteProvider) {
-            $urlRouteProvider.otherwise("/departments");
+            $urlRouteProvider.otherwise("/test");
             $stateProvider
                 //region common navigation
-                .state('locationSelectorSample', {
-                    "url": "/locationSelectorSample",
-                    templateUrl: 'views/locationSelectorSample.html',
-                    controller: 'LocationSelectorSampleController'
+                .state('test', {
+                    "url": "/test",
+                    templateUrl: 'views/default.html',
+                    controller: 'TestController'
                  
                 })       
-          
-                .state('notificationList', {
-                    "url": "/notifications",
-                    templateUrl: 'views/notifications/notificationListKendo.html',
-                    controller: 'NotificationKendoListController'
-                 
-                })
-                .state('unAuthorizeView', {
-                    "url": "/unAuthorizeView",
-                    templateUrl: 'views/UnAuthorizedAccess.html',
-                    controller: 'NotificationListController'
-                 
-                }).state('moduleStatus', {
-                    "url": "/moduleStatus",
-                    templateUrl: 'views/monitoring/moduleStatusList.html',
-                    controller: 'ModuleStatusListController'
-                  
-                });
-
-
-            //endregion
+                      //endregion
         }
     }
 }
