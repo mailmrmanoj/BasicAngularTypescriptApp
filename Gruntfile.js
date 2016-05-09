@@ -36,7 +36,6 @@ module.exports = function (grunt) {
 		 uglify: {
             main: {
                 files: {
-                    'framework/reactore.min.js': ['framework/reactore.js']
                 }
             }
         }
