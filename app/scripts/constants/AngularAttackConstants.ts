@@ -1,6 +1,6 @@
 ///<reference path="Reference.ts"/>
-module AngularAttack{
-    export  class AngularAttackConstants {
+module AngularAttack {
+    export class AngularAttackConstants {
         public static MODULE = "angular.attack";
         public static DIRECTIVES = "angular.attack.directives";
         public static CONTROLLERS = "angular.attack.controllers";
@@ -11,5 +11,6 @@ module AngularAttack{
         public static FACADES = "angular.attack.facades";
         public static CONFIG_JSON_FILE_PATH = "scripts/config.json";
         public static CONFIG_CONSTANT = "configConstant";
+        public static serverUrl = "http://192.168.1.165:90/app";
     }
 }

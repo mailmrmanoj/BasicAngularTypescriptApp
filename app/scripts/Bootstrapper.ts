@@ -6,8 +6,8 @@ module AngularAttack {
 
         //region confg and run methods declaration
         bootstrap() {
-            this.module.config(["RestangularProvider","$stateProvider", "$urlRouterProvider", "$httpProvider", (RestangularProvider: restangular.IProvider,$stateProvider: any, $urlRouterProvider: any, $httpProvider: any) =>
-                this.initializeConfig(RestangularProvider,$stateProvider, $urlRouterProvider, $httpProvider)]);
+            this.module.config(["RestangularProvider", "$stateProvider", "$urlRouterProvider", "$httpProvider", (RestangularProvider: restangular.IProvider, $stateProvider: any, $urlRouterProvider: any, $httpProvider: any) =>
+                this.initializeConfig(RestangularProvider, $stateProvider, $urlRouterProvider, $httpProvider)]);
         }
 
         initRestangular(RestangularProvider: any) {
@@ -15,18 +15,16 @@ module AngularAttack {
             if (localStorage.getItem("apiKey")) {
                 RestangularProvider.setDefaultHeaders({ apiKey: localStorage.getItem("apiKey") });
             } else {
-                location.href = "index.html#/home"; 
+                location.href = "index.html#/home";
             }
-            
-            /*RestangularProvider.setBaseUrl('localhost:8080');
-             RestangularProvider.setDefaultHeaders({ apiKey: "Hello_From_Ionic" });*/
+
         }
 
         //region confg and run methods implementation
-        initializeConfig(RestangularProvider: restangular.IProvider,$stateProvider: any, $urlRouterProvider: any, $httpProvider: ng.IHttpProvider) {
-               this.initRestangular(RestangularProvider);
-             this.router.initialize($stateProvider, $urlRouterProvider);
-            //$http.defaults.headers.common.apiKey = localStorage.getItem("apiKey") ? localStorage.getItem("apiKey") : "12s-212";
+        initializeConfig(RestangularProvider: restangular.IProvider, $stateProvider: any, $urlRouterProvider: any, $httpProvider: ng.IHttpProvider) {
+            this.initRestangular(RestangularProvider);
+            this.router.initialize($stateProvider, $urlRouterProvider);
+            //$http.defaults.headers.attack.apiKey = localStorage.getItem("apiKey") ? localStorage.getItem("apiKey") : "12s-212";
         }
         //endregion
     }
